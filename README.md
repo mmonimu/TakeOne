@@ -13,8 +13,6 @@ Nuestro objetivo es ofrecer un espacio seguro donde explorar temas como:
 
 ⚖️ Comparación constante
 
-🔁 Cambios cíclicos (cycle sync)
-
 💜 Salud mental desde un enfoque feminista
 
 💭 ¿Por qué hicimos esto?
