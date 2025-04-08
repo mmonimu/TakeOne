@@ -1,0 +1,421 @@
+/* General */
+body {
+    background-color: #F0EFD9;
+    margin: 0;
+    padding: 0;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-title {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+h1 {
+    padding: 5%;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    padding: 5%;
+}
+
+/* Navbar */
+.navbar-nav .nav-link:hover {
+    background-color: #FE7BAF;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Lato", sans-serif !important;
+    font-weight: bold !important;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 24px;
+    }
+}
+
+#logo-img img {
+    width: 80px; /* Ajusté el tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Sección Beneficios */
+#beneficios {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Espacio entre la imagen y el texto en la primera sección */
+#onboarding img {
+    margin-bottom: 20px;  /* Espacio de 20px debajo de la imagen */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #ccc;
+    text-align: left; /* Alineación de texto a la izquierda */
+}
+
+thead {
+    background-color: #A0A00A;
+    color: #F0EFD9;
+}
+
+tbody {
+    background-color: #fff;
+}
+
+td {
+    background-color: #F9F9F9;
+}
+
+
+th {
+    font-weight: bold;
+}
+
+/* Sección Onboarding */
+#onboarding {
+    background-color: #e46c26;
+    color: #F0EFD9;
+    text-align: center;
+}
+
+#p-genero {
+    background-color: #FE7BAF;
+    color: #F0EFD9;
+    padding: 5%;
+    text-align: center;
+}
+
+a {
+    color: #e46c26;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+footer {
+    color: grey;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+/* Sección Quiz */
+#quiz-home {
+    text-align: center;
+    padding: 10%;
+}
+
+.btn-center {
+    margin-top: 20px; /* Asegura que haya espacio entre el título y el botón */
+    background-color: #A0A00A;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn-center:hover {
+    background-color: #FE7BAF;
+}
+
+#quiz-home {
+    align-content: center;
+    padding: 10%;
+    text-align: center;
+}
+
+#t-ansiedad, #t-compneg {
+    background-color: #FE7BAF;
+    color: #F0EFD9;
+}
+
+#t-perfeccionismo, #t-procrastinacion {
+    background-color: #A0A00A;
+    color: #F0EFD9;
+}
+
+#video {
+    text-align: center;
+}
+
+.fullscreen-img {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.btn-center {
+    text-align: center;
+}
+
+li {
+    font-family: "Lato", sans-serif;
+    font-size: small;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contenedor de las tarjetas */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: space-between;
+}
+
+/* Tarjetas individuales */
+.card {
+    display: flex;
+    flex-direction: column;  /* Para que los elementos dentro de la tarjeta estén apilados verticalmente */
+    flex: 1 1 300px; /* La tarjeta puede crecer o disminuir, pero tiene un tamaño base de 300px */
+    min-height: 350px; /* Altura mínima para que todas las tarjetas tengan la misma altura */
+    background-color: #fff; /* Aseguramos un fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para que el contenido que sobresalga no se vea */
+}
+
+/* Aseguramos que el contenido de la tarjeta crezca para ocupar el espacio restante */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro del body estén apilados verticalmente */
+    justify-content: space-between;
+}
+
+/* Cabecera de la tarjeta */
+.card-header {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    background-color: #FE7BAF;
+    color: #fff;
+}
+
+/* Botón en la tarjeta */
+.card-footer {
+    background-color: #A0A00A;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilos para los botones dentro de las tarjetas */
+.card-footer .btn {
+    background-color: #fff;
+    color: #A0A00A;
+    font-family: "Lato", sans-serif;
+    font-size: 14px; /* Tamaño adecuado */
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 5px; /* Espaciado entre botones */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-footer .btn:hover {
+    background-color: #FE7BAF;
+    color: #fff;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-deck {
+        flex-direction: column;  /* Las tarjetas se apilarán verticalmente en pantallas pequeñas */
+        gap: 15px;
+    }
+}
+
+/* carrousel */
+.custom-carousel-img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* entrevistas */
+.entrevista-snippet {
+    background-color: #A0A00A;
+    color: #F0EFD9;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+  }
+  
+.entrevista-snippet h2 {
+    font-family: "Playfair Display", serif;
+    color: #F0EFD9;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+.entrevista-snippet p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #F0EFD9;
+  }
+  
+
+.entrevista-snippet img {
+    width: 100%;
+    height: 300px; /* o 350px o lo que prefieras */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+/* estilos de quiz */
+.card h5 {
+    font-family: 'Playfair Display', serif;
+    color: #FE7BAF; /* Rosa mexicano */
+  }
+
+.list-group-item {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #444; /* Gris oscuro para mejor legibilidad */
+    border: none;
+    padding-left: 0;
+  }
+
+.list-group-item:hover {
+    color: #A0A00A; /* Cambiar color de texto cuando el fondo es naranja */
+    cursor: pointer;
+  }
+
+
+#resultados {
+    text-align: center;
+    text-justify:distribute
+  }
+
+#resultados h3 {
+    margin-top: 10%;
+    font-family: 'Playfair Display', serif;
+    color: #FE7BAF;
+  }
+
+#resultados p {
+    margin-bottom: 15%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #444;
+  }
+
+#resultados .text-center p {
+    font-size: 1.2rem;
+  }
+
+/* Sección de Recursos */
+#recursos {
+    padding: 60px 0;
+    background-color: #F0EFD9;
+}
+
+/* Estilo para los títulos dentro de los recursos */
+.recurso-snippet h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #FE7BAF;  /* Rosa Mexicano */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto dentro de los recursos */
+.recurso-snippet p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #333;  /* Gris oscuro */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Asegura que la imagen se vea bien en pantallas pequeñas */
+.recurso-snippet img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaciado entre los recursos */
+.recurso-snippet.mb-5 {
+    margin-bottom: 40px;
+}
+
+/* Estilo para las filas de recursos, se alinean en pantalla grande */
+.recurso-snippet .row {
+    display: flex;
+    align-items: center;
+}
+
+/* Alineación de imagen y texto en pantalla grande */
+.recurso-snippet .col-md-6 {
+    flex: 1;
+}
+
+/* Flexbox para cambiar la posición de la imagen a la derecha en pantallas grandes */
+.recurso-snippet.flex-md-row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Estilo específico para el contenido en los recursos */
+.recurso-snippet .text-center {
+    text-align: center;
+}
+
