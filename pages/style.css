@@ -288,38 +288,29 @@ img {
     object-fit: cover;
   }
 
-  /* entrevistas */
-.entrevista-snippet {
-    background-color: #A0A00A;
-    color: #F0EFD9;
-    padding: 40px 20px;
-    border-radius: 20px;
-    margin-bottom: 40px;
+/* Entrevistas usando Grid */
+.entrevista-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
   }
   
-.entrevista-snippet h2 {
-    font-family: "Playfair Display", serif;
-    color: #F0EFD9;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-.entrevista-snippet p {
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #F0EFD9;
-  }
-  
+@media (min-width: 768px) {
+.entrevista-grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
 
-.entrevista-snippet img {
-    width: 100%;
-    height: 300px; /* o 350px o lo que prefieras */
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.entrevista-grid.reverse {
+      direction: rtl;
+    }
+
+.entrevista-grid.reverse > * {
+      direction: ltr;
+    }
   }
-  
+
 /* estilos de quiz */
 .card h5 {
     font-family: 'Playfair Display', serif;
@@ -376,46 +367,35 @@ img {
     margin-bottom: 20px;
 }
 
-/* Estilo para el texto dentro de los recursos */
-.recurso-snippet p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    color: #333;  /* Gris oscuro */
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Asegura que la imagen se vea bien en pantallas pequeñas */
-.recurso-snippet img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Espaciado entre los recursos */
-.recurso-snippet.mb-5 {
-    margin-bottom: 40px;
-}
-
-/* Estilo para las filas de recursos, se alinean en pantalla grande */
-.recurso-snippet .row {
-    display: flex;
+.recurso-snippet {
+    display: grid;
+    grid-template-columns: 1fr; /* una sola columna por defecto (móvil) */
+    gap: 20px;
     align-items: center;
-}
+    margin-bottom: 40px;
+  }
+  
+/* Cambia a dos columnas en pantallas grandes */
+@media (min-width: 768px) {
+    .recurso-snippet {
+      grid-template-columns: 1fr 1fr;
+    }
 
-/* Alineación de imagen y texto en pantalla grande */
-.recurso-snippet .col-md-6 {
-    flex: 1;
-}
+/* Si queremos que algunos recursos inviertan el orden (imagen izquierda) */
+.recurso-snippet.reverse {
+      direction: rtl;
+    }
 
-/* Flexbox para cambiar la posición de la imagen a la derecha en pantallas grandes */
-.recurso-snippet.flex-md-row-reverse {
-    flex-direction: row-reverse;
-}
+.recurso-snippet.reverse > * {
+      direction: ltr;
+    }
+  }
 
-/* Estilo específico para el contenido en los recursos */
-.recurso-snippet .text-center {
+.recurso-contenido {
+    padding: 10px;
+  }
+
+.recurso-imagen {
     text-align: center;
-}
+  }
 
