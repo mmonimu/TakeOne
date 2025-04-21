@@ -1,0 +1,74 @@
+/* Media Queries Generales */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  /* Aquí puedes agregar estilos específicos para móviles */
+  body {
+    font-size: $font-size-small;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: $font-size-small;
+  }
+
+  .card {
+    min-height: 300px;
+  }
+
+  .btn-center {
+    font-size: $font-size-medium;
+  }
+
+  #quiz-home {
+    padding: 5%;
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (min-width: 600px) and (max-width: 900px) {
+  /* Estilos para tabletas */
+  .navbar-nav .nav-link {
+    font-size: $font-size-medium;
+  }
+
+  .card {
+    min-height: 350px;
+  }
+
+  #quiz-home {
+    padding: 15%;
+  }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 900px) {
+  /* Estilos para escritorios */
+  .navbar-nav .nav-link {
+    font-size: $font-size-large;
+  }
+
+  .card {
+    min-height: 400px;
+  }
+
+  .card-deck {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+/* Para pantallas extra grandes (pantallas de alta resolución o monitores muy grandes) */
+@media (min-width: 1200px) {
+  /* Estilos para pantallas extra grandes */
+  .navbar-nav .nav-link {
+    font-size: $font-size-xxlarge;
+  }
+
+  .card {
+    min-height: 450px;
+  }
+
+  .custom-carousel-img {
+    width: 40%;
+  }
+}

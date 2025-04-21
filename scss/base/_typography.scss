@@ -1,0 +1,30 @@
+/* Tipografía general */
+body {
+    font-family: $font-family-lato;
+  }
+  
+  /* Estilo específico para h1 y h2 */
+h1, h2 {
+    font-family: $font-family-playfair;
+    text-align: center;
+  }
+  
+  /* Estilo para h1 */
+h1 {
+    padding: 5%;
+  }
+  
+  /* Estilo para párrafos */
+p {
+    font-family: $font-family-lato;
+    padding: 5%;
+  }
+  
+  /* Estilos para las clases de fuentes específicas */
+.lato-regular {
+    @include font($font-family-lato, 400, $font-size-medium);
+  }
+  
+.playfair-display-title {
+    @include font($font-family-playfair, 400, $font-size-heading);
+  }

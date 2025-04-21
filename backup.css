@@ -32,6 +32,7 @@ p {
     padding: 5%;
 }
 
+
 /* Navbar */
 .navbar-nav .nav-link:hover {
     background-color: #FE7BAF;
@@ -65,6 +66,7 @@ p {
     margin: 0 auto;
 }
 
+/* Estilos para main page */
 /* Sección Beneficios */
 #beneficios {
     padding: 50px;
@@ -207,6 +209,7 @@ img {
     margin: 0 auto;
 }
 
+
 /* Contenedor de las tarjetas */
 .card-deck {
     display: flex;
@@ -280,6 +283,7 @@ img {
     }
 }
 
+
 /* carrousel */
 .custom-carousel-img {
     width: 30%;
@@ -310,6 +314,7 @@ img {
       direction: ltr;
     }
   }
+
 
 /* estilos de quiz */
 .card h5 {
@@ -359,7 +364,8 @@ img {
     background-color: #F0EFD9;
 }
 
-/* Estilo para los títulos dentro de los recursos */
+
+/* Estilo para los títulos dentro de los recursos extras */
 .recurso-snippet h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;

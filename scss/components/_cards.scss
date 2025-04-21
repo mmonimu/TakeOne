@@ -1,0 +1,41 @@
+/* Estilos para las tarjetas */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    min-height: 350px;
+    background-color: $color-white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.card-header {
+    font-family: $font-family-playfair;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $color-dark;
+    padding: 15px;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+.card-footer {
+    background-color: $color-secondary;
+    padding: 15px;
+    text-align: center;
+  }

@@ -1,0 +1,52 @@
+/* Estilos para la página principal */
+#beneficios {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+#onboarding img {
+    margin-bottom: 20px;
+  }  
+
+#onboarding {
+    background-color: $color-tertiary;
+    color: $color-background;
+}
+
+#p-genero {
+    padding-top: 80px;
+    background-color: $color-primary;
+    color: $color-background;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+th, td {
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+thead {
+    background-color: #A0A00A;
+    color: #F0EFD9;
+  }
+  
+tbody {
+    background-color: #fff;
+  }
+  
+td {
+    background-color: #F9F9F9;
+  }
+

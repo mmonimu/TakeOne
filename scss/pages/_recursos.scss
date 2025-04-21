@@ -1,0 +1,26 @@
+/* Estilos para la sección de recursos */
+#recursos {
+    padding: 60px 0;
+    background-color: $color-background;
+  }
+  
+.recurso-snippet h2 {
+    font-family: $font-family-playfair;
+    font-size: 2rem;
+    color: $color-primary;
+    margin-bottom: 20px;
+  }
+  
+.recurso-snippet {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+@media (min-width: 768px) {
+    .recurso-snippet {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
